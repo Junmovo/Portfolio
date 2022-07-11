@@ -278,6 +278,9 @@ main p{
 .footer_nav{
   width: 80%;
 }
+.footer_nav li a{
+  color: #999;
+}
 .footer_nav li a:hover{
   color: black;
   transition: 0.5s;

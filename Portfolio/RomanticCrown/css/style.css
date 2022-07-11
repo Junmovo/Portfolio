@@ -95,11 +95,11 @@ main p{
 main .subtitle{
   font-size: 2rem;
   bottom: 24vh;
-  font-family: 'Perpetua Titling MT',sans-serif;
+  font-family: 'griffon',sans-serif;
 }
 main .title{
   font-size: 4.5rem;
-  font-family: 'Copperplate Gothic',sans-serif;
+  font-family: 'griffon',sans-serif;
   font-weight: bold;
   bottom: 15vh;
 }
@@ -263,6 +263,7 @@ padding: 2vh;
 .premium .pre_img{
   background: url(../images/00.jpg)no-repeat 50% 5% / cover;
   height: 60vh;
+  text-indent: -9999px;
 }
 .premium .pre_box{
    background: url(../images/clothes.png)no-repeat 50% 20% ; 
@@ -416,5 +417,5 @@ span{display: block;}
   display: grid;
   place-content: center;
   height: 5vh;
-  color: #999;
+  color: black;
 }
