@@ -1,0 +1,421 @@
+@charset "utf-8";
+body{
+  font-family: 'Noto Sans cjk kr',sans-serif;
+}
+h2{
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 4vh;
+  line-height: 5.5rem;
+}
+/* gnb */
+.container{
+  width: 100%;
+  height: 80px;
+}
+.container header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.container header h1{
+  margin-left: 3vw;
+  background: url(../images/top_logo3.png) no-repeat 50% / cover;
+  width: 200px;height: 80px;
+  background-size: 80%;
+}
+.container header h1 a{
+  text-indent: -9999px;
+  display: block;
+  height: 80px;
+}
+/* gnb하단메뉴바 */
+.container header #login{display: none;}
+.container header #gnb{
+  display: none;
+  position: absolute;
+  top: 80px;
+  z-index: 9999;
+  background-color: white;
+  width: 100%;
+}
+.container header #gnb li{
+font-size: 2rem;
+border-bottom: 1px solid #1a1a1a;
+font-family: 'IvyPresto Display',sans-serif;
+font-weight: 400;
+box-sizing: border-box;
+}
+.container header #gnb li a{
+  display: block;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  padding: 1vw;
+  text-indent: 5vw;
+}
+/* .container header #gnb li:hover a{
+  color: white;
+  background-color: black;
+} */
+
+.container header .menu{
+  margin-right: 5vw;
+  background: url(../images/menu.svg) no-repeat 50% / cover;
+  background-size: 40px;
+  width: 40px; height: 40px;
+  margin-top: 20px;
+} 
+.container header .menu a{
+  display: block;
+  text-indent:-9999px ;
+  width: 40px; height: 40px;
+  margin: 0px auto;
+}
+.container header .menu a:hover > .container header #gnb{
+  display: block;
+}
+
+/* 메인배너 */
+
+main .img{
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background: url(../images/pc_m2.jpg)no-repeat 50% / cover;
+}
+main .img a {
+  display: block;
+}
+main p{
+  position: absolute;
+  color: white;
+  margin-left:4vw;
+}
+
+main .subtitle{
+  font-size: 2rem;
+  bottom: 24vh;
+  font-family: 'Perpetua Titling MT',sans-serif;
+}
+main .title{
+  font-size: 4.5rem;
+  font-family: 'Copperplate Gothic',sans-serif;
+  font-weight: bold;
+  bottom: 15vh;
+}
+/* 브랜드 */
+.brand {
+  text-align: center;
+  width: 90%;
+  margin: 10vh auto;
+}
+.brand .sub_title_brand{
+  font-size:1.5rem;
+  font-family:  'Roboto',  sans-serif;
+  font-weight: bold;
+}
+.brand .sub_title_brand::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: black;
+  margin: 30px auto;
+}
+.brand .main_title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 3vh auto;
+}
+.sub_img{
+  text-indent: -9999px;
+}
+/* 메인 글씨 */
+.main_word{
+  font-size: 1.2rem;
+  margin-bottom: 2vh;
+}
+/*뉴 콜렉션*/
+.collect{
+  text-align: center;
+  width: 90%;
+  margin: 20vh auto;
+}
+.collect h2{
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+.collect img{
+  width: 60%;
+  position: relative;
+  z-index: 99;
+}
+.collect .img_line{
+  width: 100%; height: 4px;
+  background-color: black;
+  text-indent: -9999px;
+  position: absolute;
+  margin-top: 50%;
+  margin-left: -5%;
+  z-index: 9;
+}
+.collect h3{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 2vh auto 3vh
+}
+.main_word_2{
+  font-size: 1.2rem;
+}
+.collect #lookbook_list{
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(25vw,1fr));
+  /* grid-rows: 25vw; */
+  gap: 2vh;
+}
+.collect #lookbook_list li a{
+  color: #999;
+  display: block;
+  font-size: 1.2rem;
+}
+.collect #lookbook_list li a:HOVER{
+  transition: 0.3s;
+  color: black;
+}
+
+.view a{
+  text-align: center;
+  display: block;
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 5vh;
+  width: 35%;
+  margin: 5vh auto;
+  line-height: 4vh;
+  margin-bottom: 8vh;
+}
+
+.view a::after{
+  content: url(../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg);
+  vertical-align: top;
+  display:inline-block;
+  width: 40px;height: 40px;
+}
+/* diverse */
+.diverse{
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+}
+.diverse h2{
+  margin-top: 1vh;
+}
+.diverse .eng_word{
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 8vh;
+}
+/* img_list *//*8번 로고 3번 가방 */
+.img_list .box{background: no-repeat 50% / cover;
+height: 50vh;position: relative; margin: 5vh 0;}
+.img_list .box .black_box{
+background-color: rgba(0,0, 0,.5);
+color: white;
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 12vh;
+padding: 2vh;
+}
+.img_list .box .black_box .clothes{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.img_list .box .black_box .price{
+  font-size: 1.2rem;
+  margin-top: 0.5vh;
+}
+.img_list .box1{background: url(../images/grid_01.jpg) no-repeat 50% 0% / cover;
+  
+  }
+.img_list .box2{background: url(../images/grid_05.jpg)no-repeat 50% 0% / cover;height: ;}
+.img_list .box3{background: url(../images/grid_03.jpg)no-repeat 50% 0% / cover;display: none;}
+.img_list .box4{background: url(../images/pc_m3.jpg)no-repeat 50% 50% / cover;height: 80vh;}
+.img_list .box5{background: url(../images/grid_07.jpg)no-repeat 50% 50% / cover; height: 80vh;}
+.img_list .box6{background: url(../images/grid_09.jpg)no-repeat 50% 0% / cover;}
+.img_list .box7{background: url(../images/grid_08.jpg)no-repeat 50% 0% / cover;}
+.img_list .box8{background: url(../images/squre_logo.png); display: none;}
+.img_list .box9{background: url(../images/grid_02.jpg)no-repeat 50% 50% / cover;height: 80vh;}
+
+/*프리미엄 스타일*/
+.premium h3{
+  overflow: hidden;
+  
+  margin: 4vh auto;
+  margin-top: 10vh;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+.premium .pre_img{
+  background: url(../images/00.jpg)no-repeat 50% 5% / cover;
+  height: 60vh;
+}
+.premium .pre_box{
+   background: url(../images/clothes.png)no-repeat 50% 20% ; 
+  background-size: 60%; 
+  background-color: #f5f5f5;
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 8vh;
+}
+.premium .pre_box p{
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 7vh;
+}
+/* .premium .pre_box img{width: 70%;height: 70%;margin:30px auto} */
+span{display: block;}
+/* 이벤트창 */
+.event{
+  width: 90%;
+  margin: 0px auto;
+}
+.event h3{
+  margin: 4vh auto;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  
+}
+/* 위 */
+.event .eventbox1{
+  background: url(../images/로맨틱+MBTI_공홈+썸넬.jpg)no-repeat 50% 50% / cover;
+  margin: 0px auto;
+  height: 40vh;
+  position: relative;
+  margin-bottom: 3vh;
+}
+.event .event_black{
+  position:absolute;
+  bottom: 0;
+  background: linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0));
+  width: 100%;
+  height: 50%;
+  color: white;
+  padding: 3vw;
+}
+.event_black .event_title{
+  font-size: 1.3rem;
+  margin-top: 8vh;
+  padding-bottom: 5px;
+}
+.event_black .event_word{
+  font-size: 1.1rem;
+}
+/* 아래 */
+.event .eventbox2{
+  background: url(../images/썸네일.jpg)no-repeat 50% 50% / cover;
+  margin: 0px auto;
+  height: 40vh;
+  position: relative;
+  margin-bottom: 8vh;
+}
+/* 지도 */
+.map{
+  height: 80vh;
+  /* background-color: #ededed; */
+  display: block;
+  margin-bottom: 5vh;
+}
+.wrapper{
+  width: 90%;
+  margin: 0px auto;
+  /* padding: vh; */
+}
+.wrapper h3{
+  font-size: 2rem;
+  margin: 2vh auto;
+}
+.wrapper .point1{
+  line-height: 2.5rem;
+  border-bottom: 1px solid black;
+  padding: 1.5vh;
+  font-size: 1.2rem;
+}
+.wrapper .point1:last-child{
+  margin-bottom: 8vh;
+}
+.wrapper .point1 h4{
+  font-size: 1.4rem;
+  font-weight: bold;
+  
+}
+.wrapper .point1 h4::before{
+  content: "";
+  display:inline-block;
+  background-color: black;
+  width: 10px; height: 10px;
+  margin-right: 1.2vw;
+  margin-bottom: 0.2vh;
+}
+.wrapper .point1 .flex{
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .point1 .num{
+  font-size: 1.4rem;
+  font-weight: bold;
+  
+  /* margin-right:55%; */
+}
+.wrapper .point1 .position{
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: right;
+}
+
+/* footer */
+.footer{
+  width: 90%;
+  margin: 0px auto;
+  line-height: 1.6rem;
+  margin-bottom: 5vh;
+  padding: 2vh 0;
+  border-bottom: 1px solid #ededed;
+  color: #999;
+}
+.footer h4{
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 1vh;
+}
+/* footer nav  */
+.footer_nav{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 8vh;
+}
+.footer_nav li{
+  width: 25%;
+  margin: 0vw;
+
+}
+.footer_nav li a{
+  display: grid;
+  place-content: center;
+  height: 5vh;
+  color: #999;
+}
