@@ -46,7 +46,7 @@ h2 {
 .container header #gnb li {
   font-size: 2rem;
   border-bottom: 1px solid #1a1a1a;
-  font-family: "IvyPresto Display", sans-serif;
+  font-family: "ivypresto-display", serif;
   font-weight: 400;
   box-sizing: border-box;
 }
@@ -99,11 +99,11 @@ main p {
 
 main .subtitle {
   font-size: 2rem;
-  bottom: 24vh;
+  bottom: 22vh;
   font-family: "griffon", sans-serif;
 }
 main .title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "griffon", sans-serif;
   font-weight: bold;
   bottom: 15vh;
@@ -134,6 +134,7 @@ main .title {
 }
 .sub_img {
   text-indent: -9999px;
+  display: none;
 }
 /* 메인 글씨 */
 .main_word {
@@ -147,7 +148,7 @@ main .title {
   margin: 20vh auto;
 }
 .collect h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 3vh;
 }
@@ -186,9 +187,9 @@ main .title {
   color: #999;
   display: block;
   font-size: 1.2rem;
+  transition: 0.3s;
 }
 .collect #lookbook_list li a:hover {
-  transition: 0.3s;
   color: black;
 }
 
@@ -221,7 +222,7 @@ main .title {
   margin-top: 1vh;
 }
 .diverse .eng_word {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #999;
   margin-bottom: 8vh;
 }
@@ -232,17 +233,22 @@ main .title {
   position: relative;
   margin: 5vh 0;
 }
+.img_list .ghost_box {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
 .img_list .box .black_box {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 12vh;
+  height: 15vh;
   padding: 2vh;
 }
 .img_list .box .black_box .clothes {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .img_list .box .black_box .price {
@@ -389,13 +395,13 @@ span {
   line-height: 2.5rem;
   border-bottom: 1px solid black;
   padding: 1.5vh;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .wrapper .point1:last-child {
   margin-bottom: 8vh;
 }
 .wrapper .point1 h4 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1vh;
 }
@@ -413,14 +419,14 @@ span {
   justify-content: space-between;
 }
 .wrapper .point1 .num {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: bold;
 
   /* margin-right:55%; */
 }
 .wrapper .point1 .position {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   text-align: right;
 }
 
@@ -430,9 +436,10 @@ span {
   margin: 0px auto;
   line-height: 1.6rem;
   margin-bottom: 5vh;
+  margin-top: 5vh;
   padding: 2vh 0;
   border-bottom: 1px solid #ededed;
-  color: #999;
+  color: rgb(62, 62, 62);
 }
 .footer h4 {
   font-size: 1.5rem;
@@ -458,5 +465,17 @@ span {
   display: grid;
   place-content: center;
   height: 5vh;
+  color: black;
+}
+
+.view_2 {
+  text-align: right;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+.view_2 a {
+  color: black;
+}
+.portfolio a {
   color: black;
 }

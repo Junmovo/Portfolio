@@ -87,57 +87,76 @@ and classic looks that continues the mysterious garden and tropical mood of the 
 </p>
 </div>
 <div class="img_list">
+  <div class="ghost_box">
   <div class="box box1">
     <div class="black_box">
       <p class="clothes">LEOPARD KNIT VEST</p>
       <p class="price">86,700원</p>
     </div>
+    </div>
   </div>
+  <div class="ghost_box" style="grid-row:2/4">
   <div class="box box2">
     <div class="black_box">
       <p class="clothes">RECENT LOGO KINT_GREEN </p>
       <p class="price">45,000원</p>
     </div>
   </div>
+</div>
+<div class="ghost_box">
   <div class="box box3">
     <div class="black_box">
       <p class="clothes">GLOSS MINIMAL BACKPACK</p>
       <p class="price">35,700원</p>
     </div>
   </div>
+</div>
+<div class="ghost_box">
   <div class="box box4">
     <div class="black_box">
       <p class="clothes">RECENT LOGO POLO SHIRT_WHITE</p>
       <p class="price">52,700원</p>
     </div>
   </div>
+</div>
+<div class="ghost_box" style="grid-row: 2/4;">
   <div class="box box5">
     <div class="black_box">
       <p class="clothes">WOMANS DENIM JACKET_BLUE</p>
       <p class="price">73,100원</p>
     </div>
   </div>
+</div>
+<div class="ghost_box">
   <div class="box box6">
     <div class="black_box">
       <p class="clothes">RECENT LOGO KINT VEST</p>
       <p class="price">38,250원</p>
     </div>
   </div>
+</div>
+<div class="ghost_box">
   <div class="box box7">
     <div class="black_box">
       <p class="clothes">SELVAS TEE_MELANGE KHAKI</p>
       <p class="price">35,700원</p>
     </div>
   </div>
+</div>
   <div class="box box8">
     s
   </div>
+  <div class="ghost_box" style="
+  grid-row: 1/3;
+  grid-column: 2/3;
+">
   <div class="box box9">
     <div class="black_box">
       <p class="clothes">RECENT LOGO STRIPE SHIRT_BLUE</p>
       <p class="price">52,700원</p>
     </div>
   </div>
+</div>
 </div>
 <div class="view"><a href="#">View More</a></div>
 
@@ -156,7 +175,7 @@ and classic looks that continues the mysterious garden and tropical mood of the 
   <h3>EVENT</h3>
   <div class="eventbox1">
     <div class="event_black">
-      <p class="event_title">로맨틱크라운 MBTI 테스트하고 쿠폰받자!</p>
+      <p class="event_title">로맨틱크라운 MBTI하고 쿠폰받자!</p>
       <p class="event_word">나의 패션성향 MBTI하고 15% 할인쿠폰 증정</p>
     </div>
   </div>
@@ -169,10 +188,10 @@ and classic looks that continues the mysterious garden and tropical mood of the 
 </div>
 <!-- 지도 -->
 <!-- <h3 class="map_title">DEAER</h3> -->
+<div class="map_wrapper">
 <div id="map" class="map">지도들어갈자리</div>
   <div class="wrapper">
-  <h3>DOMESTIC</h3>
-  <div class="pointer_container">
+    <h3>DOMESTIC</h3>
   <div class="point1">
     <h4>A-LAND 홍대점</h4>
     <p class="address">서울특별시 마포구 양화로16길 29 홍익몰</p>
@@ -182,7 +201,6 @@ and classic looks that continues the mysterious garden and tropical mood of the 
     <p class="position">위치보기</p>
   </div>
   </div>
-
   <div class="point1">
     <h4>A-LAND 명동중앙점</h4>
       <p class="address">서울시 중구 충무로 1가 23-5 명동중앙점</p>
@@ -201,7 +219,9 @@ and classic looks that continues the mysterious garden and tropical mood of the 
       <p class="position">위치보기</p>
     </div>
   </div>
+  <div class="view_2"><a href="#">View More</a></div>
   </div>
+</div>
 </div>
 </div>
 <div class="footer">
@@ -211,7 +231,9 @@ and classic looks that continues the mysterious garden and tropical mood of the 
   <p>E_mail : rmtworks.cs@gmail.com</p>
   <p>사업자등록번호 : 199-86-00982</p>
   <p>통신판매업신고 : 제2018 - 서울서초 - 1471호</p>
+  <div class="portfolio"><a href="#">포트폴리오 바로가기</a></div>
 </div>
+
 <ul class="footer_nav">
   <li><a href="#">INFO</a></li>
   <li><a href="#">TERMS</a></li>
@@ -221,11 +243,12 @@ and classic looks that continues the mysterious garden and tropical mood of the 
   <li><a href="#">FACEBOOK</a></li>
 </ul>
 <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=1b5e472e7390d5d2f91d9f4083667fc6"></script>
+<!-- https 붙여야 함 -->
 <script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = {
           center: new kakao.maps.LatLng(37.553173, 126.921135), // 지도의 중심좌표
-          level: 4, // 지도의 확대 레벨
+          level: 1, // 지도의 확대 레벨
           mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
       }; 
 

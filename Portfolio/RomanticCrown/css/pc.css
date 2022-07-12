@@ -157,6 +157,9 @@ main p {
 }
 
 /* 이미지리스트 */
+.ghost_box {
+  /* display: grid; */
+}
 .img_list {
   display: grid;
   grid-template: repeat(3, 400px) / repeat(4, 1fr);
@@ -167,10 +170,11 @@ main p {
 .img_list .box {
   height: 100%;
   margin: 0;
+  transition: 1s;
 }
 .img_list .box:hover {
   transform: scale(1.05);
-  transition: 1s;
+
   cursor: pointer;
 }
 .img_list .box .black_box {
@@ -291,27 +295,42 @@ main p {
   font-size: 1.5rem;
 }
 /* 지도 */
-#map {
-  width: 80%;
-  margin: 50px auto;
-}
-.pointer_container {
+.map_wrapper {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 210px;
+  margin: 0px auto;
+  width: 80%;
+}
+#map {
+  width: 100%;
+  margin-right: 2%;
+  /* margin: 50px auto; */
 }
 .wrapper {
-  width: 80%;
+  width: 40%;
+  /* display: flex; */
+  flex-wrap: wrap;
 }
 .wrapper .point1 {
-  margin: 0;
-  width: calc(33.3333% - 4%);
+  width: 100%;
+}
+.wrapper h3 {
+  margin: 0px auto;
 }
 .wrapper .point1:last-child {
-  margin: 0;
 }
+.view_2 a {
+  display: block;
+  text-align: center;
+  display: block;
+  color: black;
+  width: 35%;
+  margin: 2vh auto;
+  line-height: 4vh;
+}
+/* 푸터 */
 .footer {
   width: 80%;
+  position: relative;
 }
 .footer_nav {
   width: 80%;
@@ -322,4 +341,16 @@ main p {
 .footer_nav li a:hover {
   color: black;
   transition: 0.5s;
+}
+.portfolio {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+.portfolio a {
+  color: black;
+  font-size: 1.1rem;
+}
+.portfolio a:hover {
+  border-bottom: 1px solid black;
 }
