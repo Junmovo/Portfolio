@@ -168,7 +168,8 @@ and classic looks that continues the mysterious garden and tropical mood of the 
   </div>
 </div>
 <!-- 지도 -->
-<div class="map">지도들어갈자리</div>
+<!-- <h3 class="map_title">DEAER</h3> -->
+<div id="map" class="map">지도들어갈자리</div>
   <div class="wrapper">
   <h3>DOMESTIC</h3>
   <div class="pointer_container">
@@ -184,7 +185,7 @@ and classic looks that continues the mysterious garden and tropical mood of the 
 
   <div class="point1">
     <h4>A-LAND 명동중앙점</h4>
-      <p class="address">서울시 중구 충무로 1가 23-5 A-LAND 명동중앙점</p>
+      <p class="address">서울시 중구 충무로 1가 23-5 명동중앙점</p>
       <p class="time">월 ~ 토 9AM 부터 11PM 까지</p>
       <div class="flex">
       <p class="num">02-3210-5900</p>
@@ -219,11 +220,11 @@ and classic looks that continues the mysterious garden and tropical mood of the 
   <li><a href="#">INSTAGRAM</a></li>
   <li><a href="#">FACEBOOK</a></li>
 </ul>
-<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1b5e472e7390d5d2f91d9f4083667fc6"></script>
+<script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=1b5e472e7390d5d2f91d9f4083667fc6"></script>
 <script>
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = {
-          center: new kakao.maps.LatLng(37.56649, 126.97823), // 지도의 중심좌표
+          center: new kakao.maps.LatLng(37.553173, 126.921135), // 지도의 중심좌표
           level: 4, // 지도의 확대 레벨
           mapTypeId : kakao.maps.MapTypeId.ROADMAP // 지도종류
       }; 
@@ -233,10 +234,17 @@ and classic looks that continues the mysterious garden and tropical mood of the 
 
   // 지도에 마커를 생성하고 표시한다
   var marker = new kakao.maps.Marker({
-      position: new kakao.maps.LatLng(37.56649, 126.97823), // 마커의 좌표
+      position: new kakao.maps.LatLng(37.553173, 126.921135), // 마커의 좌표
       map: map // 마커를 표시할 지도 객체
   });
-
+      	// 커스텀 오버레이를 생성하고 지도에 표시한다
+		var customOverlay = new kakao.maps.CustomOverlay({
+			map: map,
+			content: '<div style="padding:0 5px;background:#000;color:#fff">A-Land 홍대점</div>', 
+			position: new kakao.maps.LatLng(37.553173, 126.921135), // 커스텀 오버레이를 표시할 좌표
+			xAnchor: 0.5, // 컨텐츠의 x 위치
+			yAnchor: 3 // 컨텐츠의 y 위치
+		});
 </script>
 </body>
 </html>
