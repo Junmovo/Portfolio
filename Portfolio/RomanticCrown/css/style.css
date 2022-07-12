@@ -1,6 +1,7 @@
 @charset "utf-8";
 body {
   font-family: "Noto Sans KR", sans-serif;
+  min-width: 375px;
 }
 h2 {
   font-size: 4.5rem;
