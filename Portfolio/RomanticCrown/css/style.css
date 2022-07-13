@@ -269,7 +269,7 @@ main .title {
   display: none;
 }
 .img_list .box4 {
-  background: url(../images/pc_m3.jpg) no-repeat 50% 50% / cover;
+  background: url(../images/pc_m3.jpg) no-repeat 50% 20% / cover;
   height: 80vh;
 }
 .img_list .box5 {
@@ -277,7 +277,7 @@ main .title {
   height: 80vh;
 }
 .img_list .box6 {
-  background: url(../images/grid_09.jpg) no-repeat 50% 0% / cover;
+  background: url(../images/grid_09.jpg) no-repeat 50% 30% / cover;
 }
 .img_list .box7 {
   background: url(../images/grid_08.jpg) no-repeat 50% 0% / cover;
