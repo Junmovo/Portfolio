@@ -170,7 +170,7 @@ main .title {
   z-index: 9;
 }
 .collect h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 2vh auto 3vh;
 }
@@ -207,7 +207,9 @@ main .title {
 }
 
 .view a::after {
-  content: url(../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg);
+  /* content: url(../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg); */
+  content: "";
+  background: url(../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg)no-repeat 50% / cover;
   vertical-align: top;
   display: inline-block;
   width: 40px;
@@ -261,7 +263,6 @@ main .title {
 }
 .img_list .box2 {
   background: url(../images/grid_05.jpg) no-repeat 50% 0% / cover;
-  height: ;
 }
 .img_list .box3 {
   background: url(../images/grid_03.jpg) no-repeat 50% 0% / cover;
@@ -379,7 +380,7 @@ span {
   margin-bottom: 5vh;
 }
 .map_title {
-  font-style: 25px;
+  /* font-style: 25px; */
   text-align: center;
   margin-bottom: 5vh;
 }
