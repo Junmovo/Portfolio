@@ -3,38 +3,42 @@ body {
   min-width: 80%;
 }
 /*gnb*/
-.container header {
+.container  {
   position: static;
 }
-.container header #gnb {
+.container  #gnb {
   display: flex;
   justify-content: flex-end;
   width: 80%;
   position: static;
 }
-.container header #gnb li {
+.container  #gnb li {
   font-size: 24px;
   border-bottom: none;
   margin-right: 3vw;
   /* width: 10%; */
   /* line-height: 80px; */
 }
-.container header #gnb li a {
+.container #gnb li a {
   font-size: 24px;
   text-indent: 0px;
   padding: 0px 10px;
   line-height: 80px;
+  display: block;
   text-align: center;
   position: relative;
   transition: 0.3s;
+  font-family: "ivypresto-display", serif;
+  text-transform: uppercase;
+  color: black;
 }
-.container header #gnb li a:hover {
+.container #gnb li:hover a {
   transform: translateY(-5px);
 }
-.container header .menu {
+.container  .menu {
   display: none;
 }
-.container header #login {
+.container #login {
   display: flex;
   justify-content: center;
   font-size: 18px;
@@ -43,12 +47,16 @@ body {
   line-height: 80px;
   margin-right: 5vw;
 }
-.container header #login a {
+.container  #login a {
   padding: 10px;
   color: black;
+  transition: 0.3s;
 }
-.container header #login a:hover {
+.container  #login a:hover {
   color: #999;
+}
+.hamberger #toggle_btn{
+  display: none;
 }
 /* 메인 */
 main .img {

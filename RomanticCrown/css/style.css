@@ -13,65 +13,80 @@ h2 {
 .container {
   width: 100%;
   height: 80px;
+  position: fixed;
+  display: flex;
+  z-index: 9999;
+  background-color: white;
 }
-.container header {
+/* .container header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position: relative;
-}
-.container header h1 {
+  position: relative; 
+}*/
+.container  h1 {
   margin-left: 3vw;
   background: url(../images/top_logo3.png) no-repeat 50% / cover;
   width: 200px;
   height: 80px;
   background-size: 80%;
 }
-.container header h1 a {
+.container h1 a {
   text-indent: -9999px;
   display: block;
   height: 80px;
 }
 /* gnb하단메뉴바 */
-.container header #login {
+.container #login {
   display: none;
 }
-.container header #gnb {
+.container #gnb{
   display: none;
-  position: absolute;
-  top: 80px;
-  z-index: 9999;
-  background-color: white;
-  width: 100%;
 }
-.container header #gnb li {
+.container .hamberger .bgc{
+  position: absolute;  background-color: white; top: 80px;right: -17px; width: 100vw; height: 0px; overflow: hidden; transition: 0.5s;
+}
+.container .hamberger .bgc .Flist{
   font-size: 2rem;
   border-bottom: 1px solid #1a1a1a;
   font-family: "ivypresto-display", serif;
   font-weight: 400;
-  box-sizing: border-box;
-}
-.container header #gnb li a {
+  box-sizing: border-box; 
+} 
+.container .hamberger .bgc .Flist a{
   display: block;
-  text-transform: uppercase;
-  color: #1a1a1a;
-  padding: 1vw;
-  text-indent: 5vw;
+  padding: 10px;
+  padding-left: 20px;
+  color: black;
 }
+.hamberger #toggle_btn{ position: absolute; top: 25px; width: 40px; height: 30px;right: 30px;}
+.hamberger #toggle_btn span{position:absolute;background-color: black; width: 100%; height: 3px; transition: 0.5s;}
+.hamberger #toggle_btn .bar1{top: 0; transform-origin: middle; transition: 0.5s;}
+.hamberger #toggle_btn .bar2{top: 50%; transform: translateY(-50%); opacity: 1; transition: 0.2s;}
+.hamberger #toggle_btn .bar3{bottom: 0;transform-origin: middle;transition: 0.5s;}
+/*토글온*/
+.hamberger.on #toggle_btn .bar1{top: 40%;transform: rotate(45deg); }
+.hamberger.on #toggle_btn .bar2{opacity: 0; transform: translateX(20px);}
+.hamberger.on #toggle_btn .bar3{bottom:50%; transform: rotate(-45deg);}
+/*드롭다운*/
+.container .hamberger.on .bgc{
+  position: absolute;  background-color: white; top: 80px;right: -17px; width: 100vw; height: 330px;
+}
+
 /* .container header #gnb li:hover a{
   color: white;
   background-color: black;
 } */
 
-.container header .menu {
+/* .container header .menu {
   margin-right: 5vw;
   background: url(../images/menu.svg) no-repeat 50% / cover;
   background-size: 40px;
   width: 40px;
   height: 40px;
   margin-top: 20px;
-}
-.container header .menu a {
+} */
+/* .container header .menu a {
   display: block;
   text-indent: -9999px;
   width: 40px;
@@ -80,7 +95,7 @@ h2 {
 }
 .container header .menu a:hover > .container header #gnb {
   display: block;
-}
+} */
 
 /* 메인배너 */
 main .img {
@@ -100,14 +115,14 @@ main p {
 
 main .subtitle {
   font-size: 2rem;
-  bottom: 22vh;
+  bottom: 30vh;
   font-family: "griffon", sans-serif;
 }
 main .title {
   font-size: 3rem;
   font-family: "griffon", sans-serif;
   font-weight: bold;
-  bottom: 15vh;
+  bottom: 25vh;
 }
 /* 브랜드 */
 .brand {

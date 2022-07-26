@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="https://use.typekit.net/kvl1rzs.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" media="(min-width:1024px)" href="./css/pc.css">
+ 
 </head>
 <body>
   <!-- 상단 gnb -->
   <div class="container">
-    <header>
       <h1><a href="#">logo</a></h1>
   <ul id="gnb">
     <li><a href="#">about</a></li>
@@ -27,8 +27,20 @@
       <li><a href="#">login</a></li>
       <li><a href="#">join</a></li>
     </ul>
-    <div class="menu"><a href="#">hamberger</a></div>
-  </header>
+    <div class="hamberger">
+      <a href="#" id="toggle_btn">
+        <span class="bar1"></span>
+        <span class="bar2"></span>
+        <span class="bar3"></span>
+      </a>
+      <div class="bgc">
+      <div class="Flist 1"><a href="#">About</a></div>
+      <div class="Flist 2"><a href="#">Store</a></div>
+      <div class="Flist 3"><a href="#">SNS</a></div>
+      <div class="Flist 4"><a href="#">Event</a></div>
+      <div class="Flist 5"><a href="#">Account</a></div>
+    </div>
+    </div>
 </div>
 
 <!-- 메인 -->
@@ -244,6 +256,12 @@ and classic looks that continues the mysterious garden and tropical mood of the 
 <script src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=1b5e472e7390d5d2f91d9f4083667fc6"></script>
 <!-- https 붙여야 함 -->
 <script>
+    const togglebtn = document.querySelector('#toggle_btn')
+    const hbg = document.querySelector('.hamberger')
+    togglebtn.addEventListener('click',(e)=>{
+      e.preventDefault();
+      hbg.classList.toggle('on')
+    })
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
       mapOption = {
           center: new kakao.maps.LatLng(37.553173, 126.921135), // 지도의 중심좌표
