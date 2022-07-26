@@ -3,16 +3,16 @@ body {
   min-width: 80%;
 }
 /*gnb*/
-.container  {
+.container {
   position: static;
 }
-.container  #gnb {
+.container #gnb {
   display: flex;
   justify-content: flex-end;
   width: 80%;
   position: static;
 }
-.container  #gnb li {
+.container #gnb li {
   font-size: 24px;
   border-bottom: none;
   margin-right: 3vw;
@@ -35,7 +35,7 @@ body {
 .container #gnb li:hover a {
   transform: translateY(-5px);
 }
-.container  .menu {
+.container .menu {
   display: none;
 }
 .container #login {
