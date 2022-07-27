@@ -47,15 +47,15 @@ body {
   line-height: 80px;
   margin-right: 5vw;
 }
-.container  #login a {
+.container #login a {
   padding: 10px;
   color: black;
   transition: 0.3s;
 }
-.container  #login a:hover {
+.container #login a:hover {
   color: #999;
 }
-.hamberger #toggle_btn{
+.hamberger #toggle_btn {
   display: none;
 }
 /* 메인 */
@@ -319,6 +319,7 @@ main p {
 }
 #map {
   width: 100%;
+  height: 80vh;
   margin-right: 2%;
   /* margin: 50px auto; */
 }

@@ -24,7 +24,7 @@ h2 {
   width: 100%;
   position: relative; 
 }*/
-.container  h1 {
+.container h1 {
   margin-left: 3vw;
   background: url(../images/top_logo3.png) no-repeat 50% / cover;
   width: 200px;
@@ -40,37 +40,83 @@ h2 {
 .container #login {
   display: none;
 }
-.container #gnb{
+.container #gnb {
   display: none;
 }
-.container .hamberger .bgc{
-  position: absolute;  background-color: white; top: 80px;right: -17px; width: 100vw; height: 0px; overflow: hidden; transition: 0.5s;
+.container .hamberger .bgc {
+  position: absolute;
+  background-color: white;
+  top: 80px;
+  right: 0px;
+  width: 105vw;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
 }
-.container .hamberger .bgc .Flist{
+.container .hamberger .bgc .Flist {
   font-size: 2rem;
   border-bottom: 1px solid #1a1a1a;
   font-family: "ivypresto-display", serif;
   font-weight: 400;
-  box-sizing: border-box; 
-} 
-.container .hamberger .bgc .Flist a{
+  box-sizing: border-box;
+}
+.container .hamberger .bgc .Flist a {
   display: block;
   padding: 10px;
-  padding-left: 20px;
+  padding-left: 40px;
   color: black;
 }
-.hamberger #toggle_btn{ position: absolute; top: 25px; width: 40px; height: 30px;right: 30px;}
-.hamberger #toggle_btn span{position:absolute;background-color: black; width: 100%; height: 3px; transition: 0.5s;}
-.hamberger #toggle_btn .bar1{top: 0; transform-origin: middle; transition: 0.5s;}
-.hamberger #toggle_btn .bar2{top: 50%; transform: translateY(-50%); opacity: 1; transition: 0.2s;}
-.hamberger #toggle_btn .bar3{bottom: 0;transform-origin: middle;transition: 0.5s;}
+.hamberger #toggle_btn {
+  position: absolute;
+  top: 25px;
+  width: 40px;
+  height: 30px;
+  right: 30px;
+}
+.hamberger #toggle_btn span {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 3px;
+  transition: 0.5s;
+}
+.hamberger #toggle_btn .bar1 {
+  top: 0;
+  transform-origin: middle;
+  transition: 0.5s;
+}
+.hamberger #toggle_btn .bar2 {
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: 0.2s;
+}
+.hamberger #toggle_btn .bar3 {
+  bottom: 0;
+  transform-origin: middle;
+  transition: 0.5s;
+}
 /*토글온*/
-.hamberger.on #toggle_btn .bar1{top: 40%;transform: rotate(45deg); }
-.hamberger.on #toggle_btn .bar2{opacity: 0; transform: translateX(20px);}
-.hamberger.on #toggle_btn .bar3{bottom:50%; transform: rotate(-45deg);}
+.hamberger.on #toggle_btn .bar1 {
+  top: 40%;
+  transform: rotate(45deg);
+}
+.hamberger.on #toggle_btn .bar2 {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.hamberger.on #toggle_btn .bar3 {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
 /*드롭다운*/
-.container .hamberger.on .bgc{
-  position: absolute;  background-color: white; top: 80px;right: -17px; width: 100vw; height: 330px;
+.container .hamberger.on .bgc {
+  position: absolute;
+  background-color: white;
+  top: 80px;
+  right: 0px;
+  width: 100vw;
+  height: 330px;
 }
 
 /* .container header #gnb li:hover a{
@@ -224,7 +270,8 @@ main .title {
 .view a::after {
   /* content: url(../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg); */
   content: "";
-  background: url(../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg)no-repeat 50% / cover;
+  background: url(../images/arrow_right_alt_FILL0_wght400_GRAD0_opsz48.svg)
+    no-repeat 50% / cover;
   vertical-align: top;
   display: inline-block;
   width: 40px;
@@ -387,7 +434,7 @@ span {
 }
 /* 지도 */
 #map {
-  height: 80vh;
+  height: 50vh;
   width: 90%;
   margin: 0px auto;
   /* background-color: #ededed; */
