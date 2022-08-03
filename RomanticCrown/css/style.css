@@ -144,15 +144,36 @@ h2 {
 } */
 
 /* 메인배너 */
-main .img {
+main .simpleslide{
+  width: 100%; height: 80vh;position: relative;
+}
+main .simpleslide .slidewrapper{
+  height: 100%;
+}
+.simpleslide .slidewrapper .slide_item{
+  position: absolute; width: 100%; height: 100%;margin-top:60px;
+  background: no-repeat 50% / cover; transition: 0.8s;
+  text-indent: -9999px;
+  opacity: 0;
+}
+.simpleslide .slidewrapper .slide_item.active{
+  opacity: 1;
+}
+main .simpleslide .slidewrapper .img1{background-image: url(../images/00.jpg);}
+main .simpleslide .slidewrapper .img2{background-image: url(../images/12.jpg);}
+main .simpleslide .slidewrapper .img3{background-image: url(../images/01.jpg);}
+
+.simpleslide .slideBtn{
+  /* background-color: aliceblue; */
+  position: absolute;
+  color: white;
+  top:55%;text-indent: -9999px; transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 80vh;
-  position: relative;
-  background: url(../images/pc_m2.jpg) no-repeat 50% / cover;
 }
-main .img a {
-  display: block;
-}
+/* .prev{display: block;width: 50px; height: 50px;background:url(../images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg) no-repeat 50% / cover; background-position: 50% 50%;margin: 0px 5vw;cursor: pointer;}
+.next{display: block;width:50px; height: 50px;background:url(../images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg) no-repeat 50% / cover; background-position: 50% 50%;margin: 0px 5vw;cursor: pointer;} */
 main p {
   position: absolute;
   color: white;
@@ -161,14 +182,14 @@ main p {
 
 main .subtitle {
   font-size: 2rem;
-  bottom: 30vh;
+  bottom: 20vh;
   font-family: "griffon", sans-serif;
 }
 main .title {
   font-size: 3rem;
   font-family: "griffon", sans-serif;
   font-weight: bold;
-  bottom: 25vh;
+  bottom: 14vh;
 }
 /* 브랜드 */
 .brand {
@@ -177,6 +198,7 @@ main .title {
   margin: 10vh auto;
 }
 .brand .sub_title_brand {
+  margin-top: 180px;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -216,7 +238,7 @@ main .title {
 }
 
 .collect img {
-  width: 60%;
+  width:40vh;
   position: relative;
   z-index: 99;
 }
