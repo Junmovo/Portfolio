@@ -1,0 +1,327 @@
+@charset "utf-8";
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  letter-spacing: -1px;
+}
+
+/*배너*/
+.mainbanner {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.bgcimg {
+  background: url(../images/05.jpg) no-repeat 50% / cover;
+  filter: blur(6px);
+  position: absolute;
+  z-index: -999;
+  width: 100%;
+  text-indent: -9999px;
+  height: 100vh;
+}
+.blackbox {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: -99;
+  width: 100%;
+  height: 100vh;
+  text-indent: -9999px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1400px;
+  margin: 10vh auto;
+  position: relative;
+  flex-wrap: wrap;
+}
+.container .textbox {
+  margin-right: 4vw;
+  margin-top: 60px;
+}
+
+.container .title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.container .tagbox {
+  display: flex;
+  margin-bottom: 24px;
+}
+.container .tagbox li {
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  margin-right: 15px;
+}
+.container h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.container .word {
+  font-size: 20px;
+  margin-top: 50px;
+  line-height: 1.6;
+}
+.imgbox {
+  background: url(../images/05.jpg) no-repeat 50% / cover;
+  width: 50%;
+  height: 500px;
+  align-items: center;
+  text-indent: -9999px;
+  margin-bottom: 50px;
+}
+.container .subtitle {
+  font-size: 20px;
+  font-weight: 200;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.btnbox {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  bottom: -10vh;
+  font-size: 30px;
+}
+.btnbox a {
+  color: #999;
+}
+.btnbox a:hover {
+  color: white;
+}
+
+/* project */
+main {
+  width: 100%;
+  height: 400vh;
+}
+/* 01 */
+.list {
+  display: flex;
+  justify-content: center;
+  margin-top: 185px;
+}
+.numbox {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-left: 5vw;
+}
+.numbox p {
+  width: 75px;
+  height: 30px;
+  border: 1px solid #000;
+  display: grid;
+  place-content: center;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.numbox h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.bluebold_first {
+  font-weight: 700;
+  color: #1c3e84;
+  margin-top: 60px;
+}
+.bluebold {
+  font-weight: 700;
+  margin-top: 80px;
+  color: #1c3e84;
+}
+.dumtxt {
+  width: 46%;
+}
+.dumtxt h3 {
+  margin-bottom: 3vh;
+  font-size: 28px;
+}
+.dumtxt .txtmb {
+  margin-bottom: 1.5vh;
+}
+.dumtxt p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* 02 */
+.dumitxt02 {
+  width: 46%;
+}
+.dumitxt02 h3 {
+  font-size: 28px;
+  margin-bottom: 3vh;
+}
+.dumitxt02 li {
+  list-style: disc;
+  font-size: 20px;
+  margin-left: 20px;
+  padding: 10px 0px;
+}
+/*KEYWORD*/
+.dumitxt02 .keyword {
+  display: flex;
+  font-size: 28px;
+  font-weight: 700;
+}
+.dumitxt02 .keyword p {
+  margin-right: 100px;
+}
+/* Color */
+.cb {
+  display: flex;
+}
+.dumitxt02 .colorbox1 {
+  display: flex;
+  width: 180px;
+  height: 100px;
+  background-color: #000;
+  margin-right: 15px;
+  text-indent: -9999px;
+}
+.dumitxt02 .colorbox2 {
+  display: flex;
+  width: 180px;
+  height: 100px;
+  background-color: #999;
+  margin-right: 15px;
+  text-indent: -9999px;
+}
+.dumitxt02 .cb p {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 40px;
+  line-height: 1.6;
+}
+/*fonts*/
+.dumitxt02 .fonts {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.dumitxt02 .fonts .noto {
+  font-size: 24px;
+  margin-right: 5vw;
+  font-family: "Noto Sans Kr", sans-serif;
+}
+.dumitxt02 .fonts .notoweight p {
+  font-family: "Noto Sans Kr", sans-serif;
+}
+.dumitxt02 .fonts .notoweight p:nth-child(1) {
+  font-weight: bold;
+}
+.dumitxt02 .fonts .notoweight p:nth-child(2) {
+  font-weight: 400;
+  margin: 20px 0px;
+}
+.dumitxt02 .fonts .notoweight p:nth-child(3) {
+  font-weight: 200;
+}
+.dumitxt02 .fonts .eng {
+  font-size: 24px;
+  margin-right: 5vw;
+  font-family: "ivypresto-display", serif;
+}
+
+/*Problem&Soulution*/
+.dumitxt02 .PS_T {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 20px 0px;
+}
+.dumitxt02 .PS p {
+  font-size: 20px;
+  margin-left: 23px;
+  line-height: 1.6;
+  padding: 0px 0px 20px 0;
+}
+
+/*publishing*/
+
+.list .hashtag {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2;
+}
+.dumtxt #publist li {
+  list-style: disc;
+  margin-left: 20px;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+.dumtxt #publist li:nth-child(1) {
+  margin-top: 60px;
+}
+span {
+  font-weight: 700;
+  color: #1c3e84;
+}
+/*publishing problem*/
+.dumtxt #PPS li {
+  margin-top: 55px;
+  font-size: 24px;
+  font-weight: bold;
+  list-style: disc;
+  margin-left: 20px;
+}
+.dumtxt #PPS p {
+  margin-left: 23px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/*view*/
+.view {
+  margin: 0px auto;
+  margin-top: 450px;
+  width: 200px;
+  height: 80px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  border: 1px solid black;
+  line-height: 80px;
+}
+.view a {
+  color: black;
+  display: block;
+  transition: 0.5s;
+}
+.view a:hover {
+  background-color: black;
+  color: white;
+}
+
+.lastbtn {
+  display: flex;
+  justify-content: space-between;
+}
+.lastbtn a {
+  color: #999;
+  font-size: 30px;
+  font-weight: 200;
+}
+.lastbtn a:hover {
+  color: black;
+}
+.lastbtn .backbtn,
+.lastbtn .nextbtn {
+  margin: 100px 10vw;
+}
