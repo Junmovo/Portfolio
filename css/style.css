@@ -17,8 +17,9 @@ body {
   z-index: 9999;
   margin: 0px 5vw;
 }
-.GNBcontainer.on{
-  height: 0; overflow: hidden;
+.GNBcontainer.on {
+  height: 0;
+  overflow: hidden;
 }
 .GNBcontainer h1 {
   display: grid;
@@ -160,7 +161,7 @@ body {
   padding: 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
- 
+
   opacity: 1;
 }
 
@@ -701,4 +702,6 @@ main .plus_box3 {
   --swiper-navigation-size: 30px;
 }
 
-.fp-watermark{display: none;}
+.fp-watermark {
+  display: none;
+}
