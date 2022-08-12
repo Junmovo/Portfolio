@@ -17,6 +17,9 @@ body {
   z-index: 9999;
   margin: 0px 5vw;
 }
+.GNBcontainer.on{
+  height: 0; overflow: hidden;
+}
 .GNBcontainer h1 {
   display: grid;
   place-content: center;
@@ -96,7 +99,7 @@ body {
   position: absolute;
   background-color: #ffffff;
   width: 0px;
-  height: 0px;
+  height: 350px;
   right: 14px;
   top: 100px;
   display: flex;
@@ -107,6 +110,7 @@ body {
   border-bottom: 1px solid black;
   overflow: hidden;
   transition: 1s;
+  opacity: 0;
 }
 .GNBcontainer .hamberger .Flist {
   /* display: none; */
@@ -156,7 +160,8 @@ body {
   padding: 10px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-  animation: side_1 1s forwards;
+ 
+  opacity: 1;
 }
 
 /*메인 1페이지*/
@@ -695,3 +700,5 @@ main .plus_box3 {
   top: auto;
   --swiper-navigation-size: 30px;
 }
+
+.fp-watermark{display: none;}

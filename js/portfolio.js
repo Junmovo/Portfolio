@@ -4,6 +4,7 @@ const hamberger = document.querySelector(".hamberger");
 toggleBtn.addEventListener("click", (e) => {
   e.preventDefault();
   hamberger.classList.toggle("on");
+ 
 });
 
 const bgimg = document.querySelector(".imgpage");
@@ -26,6 +27,17 @@ pfbox.forEach((pfbox, idx) => {
   });
 });
 
+const gnb = document.querySelector(".GNBcontainer")
+let height = swiperbg.offsetTop - document.documentElement.clientHeight;
+console.log(height)
+console.log(document.documentElement.scrollTop)
+addEventListener('scroll',()=>{
+  if(5000>height){
+    gnb.classList.add('on')
+  }else{
+    gnb.classList.remove('on')
+  }
+})
 // Swiper.js
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
