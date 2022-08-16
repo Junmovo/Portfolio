@@ -1,20 +1,25 @@
 @charset "utf-8";
 
 body {
-  max-height: 1080px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+    scroll-behavior: smooth;
+overflow-y: hidden;
+overflow-x: hidden;
 }
+
 .section_container {
   width: 100%;
+  
   height: 100vh;
 }
 #viewbox {
   width: 2000%;
   height: 100vh;
   display: flex;
+  
 }
 /*섹션1*/
 #section1 {
@@ -54,19 +59,22 @@ body {
 }
 /*gnb 영역 Section2*/
 #section2 {
-  width: 8vw;
-  height: 84vh;
+  width: 80px;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transform: rotate(270deg);
+  background-color: white;
+  position: sticky;
+  left: 0;transition: 1.5s;
+  z-index: 9999;
+  /* border-right: 1px solid black; */
 }
 #section2 h1 {
   background: url(../images/logo.png) no-repeat 50% / contain;
   width: 100px;
   height: 40px;
   cursor: pointer;
-
   order: 2;
 }
 
@@ -76,6 +84,8 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  transform: rotate(270deg);
+  
 }
 #section2 #gnb li:last-child {
   margin-left: 100px;
@@ -89,11 +99,23 @@ body {
   text-align: center;
 }
 
-#section2 #gnb li a:hover {
-  background-color: black;
-  color: white;
+#section2 #gnb li a span{
+  position: relative;
 }
-
+#section2 #gnb a:hover span::after {
+  width: 100%;
+}
+#section2 #gnb li a span::after{
+  content: "";
+  position: absolute;
+  background-color: black;
+  margin: 0px auto;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  transition: 0.4s;
+  width: 0
+}
 /*section3*/
 #section3 {
   margin: 80px 0px;
@@ -120,6 +142,7 @@ body {
   color: #999;
   line-height: 1.8;
   font-size: 1.2rem;
+  
 }
 
 /*section 4*/
@@ -140,6 +163,7 @@ body {
   background: url(../images/img3.jpg) no-repeat 50% / cover;
   height: 100%;
   width: 960px;
+  transition: 1.5s;
 }
 #section5 .imgbox4 {
   background: url(../images/19.png) no-repeat 50% / cover;
@@ -148,6 +172,7 @@ body {
   position: absolute;
   top: 10vh;
   right: -100px;
+  transition: 1.5s;
 }
 
 /* section 6 */
@@ -161,10 +186,12 @@ body {
   font-weight: 200;
   margin-top: 180px;
   margin-bottom: 100px;
+  transition: 1.5s;
 }
 #section6 h2 {
   font-size: 50px;
   margin-bottom: 50px;
+  transition: 1.5s;
 }
 #section6 h2 span {
   font-weight: bold;
@@ -172,10 +199,12 @@ body {
 #section6 h3 {
   font-size: 30px;
   margin-bottom: 50px;
+  transition: 1.5s;
 }
 #section6 p {
   font-size: 18px;
   line-height: 1.8;
+  transition: 1.5s;
 }
 
 /*section 7*/
@@ -188,6 +217,7 @@ body {
   margin-left: 400px;
   position: relative;
   overflow: hidden;
+  transition: 1.5s;
 }
 #section7 .bgi {
   transition: 0.5s;
@@ -266,30 +296,30 @@ body {
 #textsection {
   width: 420px;
   height: 100%;
+  position: relative;
   overflow: hidden;
 }
 .marquee {
-  height: 150px;
-  width: 1366px;
-  overflow: hidden;
-  position: relative;
+  height: 400px;
+  width: 400px;
+  
+  position: absolute;
+ top: -450px;
   transform: rotate(270deg);
 }
 
 .marquee div {
-  display: block;
-  width: 200%;
-  height: 150px;
   position: absolute;
-  overflow: hidden;
+ 
   -webkit-animation: marquee 10s linear infinite;
-  animation: marquee 10s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 .marquee span {
   float: left;
   width: 50%;
-  font-size: 100px;
+  font-size: 300px;
+  font-family: /*"ivypresto-display";*/ "Palatino Linotype W02";
   padding-top: 30px;
   letter-spacing: 2px;
 }
@@ -299,7 +329,7 @@ body {
     left: 0;
   }
   100% {
-    left: -100%;
+    left: -650%;
   }
 }
 
@@ -308,7 +338,7 @@ body {
     left: 0;
   }
   100% {
-    left: -100%;
+    left: -700%;
   }
 }
 
@@ -327,6 +357,7 @@ body {
   background: url(../images/10.jpg) no-repeat 50% / cover;
   width: 615px;
   height: 90vh;
+  transition: 1.5s;
 }
 #section9 .Expedition_box .Expedition_IMG2 {
   background: url(../images/22.jpg) no-repeat 50% / cover;
@@ -335,6 +366,7 @@ body {
   height: 300px;
   bottom: 2vh;
   right: -250px;
+  transition: 2s;
 }
 #section9 .dumitext {
   height: 90vh;
@@ -466,20 +498,18 @@ body {
   width: 1100%;
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(9, 1fr) 1.5fr;
 }
 #section13 .linebox .info {
   width: 400px;
   height: 100%;
 }
 #section13 .linebox #longimg {
-  background-color: #999;
   width: 400px;
   height: 480px;
   margin-top: 40px;
 }
 #section13 .linebox #shortimg {
-  background-color: #999;
   width: 400px;
   height: 400px;
   margin-top: 40px;
@@ -503,8 +533,7 @@ body {
   justify-content: space-between;
   margin-top: 30px;
 }
-#section13 .linebox .btns .btn1 {
-}
+
 #section13 .linebox .btns .btn1 a {
   color: #092e92;
   display: block;
@@ -514,8 +543,11 @@ body {
   display: grid;
   place-content: center;
 }
-#section13 .linebox .btns .btn2 {
+#section13 .linebox .btns .btn1 a:hover {
+  background-color: #092e92;
+  color: white;
 }
+
 #section13 .linebox .btns .btn2 a {
   color: #820808;
   display: block;
@@ -525,23 +557,95 @@ body {
   display: grid;
   place-content: center;
 }
+#section13 .linebox .btns .btn2 a:hover {
+  background-color: #820808;
+  color: white;
+}
 #section13 .linebox .info .longimg1 {
+  background: url(../images/1.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .longimg2 {
+  background: url(../images/3.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .longimg3 {
+  background: url(../images/5.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .longimg4 {
+  background: url(../images/7.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .longimg5 {
+  background: url(../images/9.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .shortimg1 {
+  background: url(../images/2.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .shortimg2 {
+  background: url(../images/4.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .shortimg3 {
+  background: url(../images/6.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .shortimg4 {
+  background: url(../images/8.jpg) no-repeat 50% / cover;
 }
 #section13 .linebox .info .shortimg5 {
+  background: url(../images/10.jpg) no-repeat 50% / cover;
+}
+.gofirst .gofirstbtn {
+  display: grid;
+  grid-column: 10/11;
+  align-items: center;
+  justify-content: end;
+  height: 100%;
+  font-size: 32px;
+  position: relative;
+}
+.gofirst .gofirstbtn a::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/arrow_back_ios_FILL0_wght400_GRAD0_opsz48.svg)
+    no-repeat 50% / cover;
+}
+.gofirst .gofirstbtn a {
+  position: absolute;
+  right: 0;
+  color: black;
+}
+.gofirst .gofirstbtn a:hover {
+  animation: move_1 1s alternate infinite;
+}
+@keyframes move_1 {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 3%;
+  }
+}
+
+/* 14 */
+#section14 {
+  margin-left: ;
+}
+#section14 p {
+  font-size: 100px;
+  font-weight: 200;
+  color: #e5e5e5;
+  font-family: "ivypresto-display";
+}
+/* 모션 */
+#welcome{
+  transform: translateX(409px);
+  transition: 1.5s;
+}
+#visit{
+  transform: translateX(500px);
+  transition: 2.5s;
+}
+#suwon{
+  transform: translateX(600px);
+  transition: 3.5s;
 }

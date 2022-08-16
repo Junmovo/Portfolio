@@ -76,3 +76,7 @@ var customOverlay = new kakao.maps.CustomOverlay({
   xAnchor: 0.5, // 컨텐츠의 x 위치
   yAnchor: 3 // 컨텐츠의 y 위치
 });
+
+AOS.init({
+  duration: 1000
+});

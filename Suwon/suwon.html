@@ -13,8 +13,13 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="../common/css/vegas.min.css" />
+    <link rel="stylesheet" href="../common/css/aos.css">
     <link rel="stylesheet" href="./css/style.css" />
+    
     <script src="../common/js/jquery-3.6.0.min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+    <script defer src="../common/js/aos.js"></script>
+    <script src="../common/js/jquery.mousewheel.min.js"></script>
     <script defer src="./js/suwon.js"></script>
   </head>
   <body>
@@ -25,19 +30,19 @@
           <div class="imgbox1">av</div>
           <div class="imgbox2">av</div>
           <div class="suwon">
-            <h4>Human City</h4>
-            <h1>Suwon</h1>
+            <h4 data-aos="fade-up" data-aos-delay="800">Human City</h4>
+            <h1 data-aos="fade-up" data-aos-delay="1200">Suwon</h1>
           </div>
         </div>
         <!-- 2 -->
         <div id="section2">
-          <ul id="gnb">
-            <li><a href="#">History</a></li>
-            <li><a href="#">List</a></li>
-            <li><a href="#">Expedition</a></li>
-            <li><a href="#">Food</a></li>
-            <li><a href="#">Travel</a></li>
-            <li><h1></h1></li>
+          <ul id="gnb" >
+            <li><a href="#section6"><span>History</span></a></li>
+            <li><a href="#"><span>List</span></a></li>
+            <li><a href="#"><span>Expedition</span></a></li>
+            <li><a href="#"><span>Food</sapn></a></li>
+            <li><a href="#"><span>Travel</span></a></li>
+            <li><h1><a href="#"></a></h1></li>
           </ul>
         </div>
         <!-- 3 -->
@@ -53,9 +58,10 @@
         </div>
         <!-- 4 -->
         <div id="section4">
-          <h1>Welcome</h1>
-          <h1>VISIT</h1>
-          <h1>SUWON</h1>
+          <h1 id="welcome">Welcome</h1>
+          <h1 id="visit">VISIT</h1>
+          <h1 id="suwon">SUWON</h1>
+
         </div>
         <!-- 5 -->
         <div id="section5">
@@ -139,7 +145,7 @@
                   방화수류정</a
                 >
               </li>
-              <li>
+              <li >
                 <a href="#"
                   ><div class="a_line"></div>
                   효원의 종</a
@@ -153,7 +159,7 @@
           <div class="marquee">
             <div>
               <span>Expedition.</span>
-              <span>Expedition.</span>
+              
             </div>
           </div>
         </div>
@@ -180,8 +186,7 @@
         <div id="textsection">
           <div class="marquee">
             <div>
-              <span>Expedition.</span>
-              <span>Expedition.</span>
+              <span>SuwonFood.</span>
             </div>
           </div>
         </div>
@@ -201,15 +206,17 @@
               육질이 부드럽고 육즙이 풍부해 맛이 매우 좋습니다.<br />
               다양한 먹거리로 풍부한 전통시장들을 만나보세요
             </p>
-            <div class="another"><a href="#">다른 먹거리 코스 찾아보기</a></div>
+            <div class="another">
+              <a href="#">다른 먹거리 코스 찾아보기</a>
+            </div>
           </div>
         </div>
         <!-- 12 -->
         <div id="textsection">
           <div class="marquee">
             <div>
-              <span>Expedition.</span>
-              <span>Expedition.</span>
+              <span>ListOfSuwon</span>
+            
             </div>
           </div>
         </div>
@@ -231,23 +238,136 @@
                 <div class="btn1"><a href="#">VR체험 바로가기</a></div>
                 <div class="btn2"><a href="#">자세히보기</a></div>
               </div>
+            </div>
+            <div class="info">
+              <div id="shortimg" class="shortimg1"></div>
+              <h1>장안문(長安門)</h1>
+              <div class="miniline"></div>
+              <p>
+                장안문은 화성의 북문이자 정문입니다. 장안이라는 말은 수도라는
+                뜻으로 또 다른 서울이라는 의미를 담고 있습니다. 장안문이
+                정문이라는 것은 왕이 수도인 한양에서 수원으로 들어오는 문으로
+                쓰였기 때문입니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
               </div>
-              <div class="info">
-                <div id="shortimg" class="shortimg1"></div>
-                <h1>장안문(長安門)</h1>
-                <div class="miniline"></div>
-                <p>
-                  장안문은 화성의 북문이자 정문입니다. 장안이라는 말은 수도라는
-                  뜻으로 또 다른 서울이라는 의미를 담고 있습니다. 장안문이
-                  정문이라는 것은 왕이 수도인 한양에서 수원으로 들어오는 문으로
-                  쓰였기 때문입니다.
-                </p>
-                <div class="btns">
-                  <div class="btn1"><a href="#">VR체험 바로가기</a></div>
-                  <div class="btn2"><a href="#">자세히보기</a></div>
-                </div>
+            </div>
+            <div class="info">
+              <div id="longimg" class="longimg2"></div>
+              <h1>팔달문(八達門)</h1>
+              <div class="miniline"></div>
+              <p>
+                보물 제402호 조선 후기인 1794년에 세운 화성의 남쪽 문으로, 문의
+                이름은 사방팔방으로 길이 열린다는 의미를 담고 있습니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
               </div>
-       
+            </div>
+            <div class="info">
+              <div id="shortimg" class="shortimg2"></div>
+              <h1>창룡문(蒼龍門)</h1>
+              <div class="miniline"></div>
+              <p>
+                화성의 동문으로 규모와 형식이 화서문과 비슷합니다. 주목할 것은
+                성문 왼쪽에 있는 실명판입니다. 화강석 벽을 다듬어서 글씨를
+                새겼는데 지금도 선명하게 남아있습니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
+              </div>
+            </div>
+            <div class="info">
+              <div id="longimg" class="longimg3"></div>
+              <h1>화서문(華西門)</h1>
+              <div class="miniline"></div>
+              <p>
+                보물 제403호 화성의 서문으로 보물 제403호입니다. 석축으로 된
+                무지개 문 위에 단층 문루(門樓)가 세워져 있으며 팔달문의 옹성과는
+                달리 문 앞에는 한쪽이 터진 옹성이 있습니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
+              </div>
+            </div>
+            <div class="info">
+              <div id="shortimg" class="shortimg3"></div>
+              <h1>서장대(西將臺)</h1>
+              <div class="miniline"></div>
+              <p>
+                서장대는 팔달산의 산마루에 있는데 유좌(酉坐) 묘향(卯向)입니다.
+                위에 올라가서 굽어 보면 팔방으로 통합니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
+              </div>
+            </div>
+            <div class="info">
+              <div id="longimg" class="longimg4"></div>
+              <h1>화홍문(華虹門)</h1>
+              <div class="miniline"></div>
+              <p>
+                보물 제403호 화성의 서문으로 보물 제403호입니다. 석축으로 된
+                무지개 문 위에 단층 문루(門樓)가 세워져 있으며 팔달문의 옹성과는
+                달리 문 앞에는 한쪽이 터진 옹성이 있습니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
+              </div>
+            </div>
+            <div class="info">
+              <div id="shortimg" class="shortimg4"></div>
+              <h1>방화수류정(訪花隨柳亭)</h1>
+              <div class="miniline"></div>
+              <p>
+                광교산의 한 쪽 기슭이 남으로 뻗어내려 선암산이 되었고, 다시
+                서쪽으로 감돌아 몇리를 내려가 용두(龍頭)에서 그치고서 북쪽을
+                향하여 활짝 열렸습니다. 용두란 것은 용연의 위에 불쑥 솟은 바위를
+                말합니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
+              </div>
+            </div>
+            <div class="info">
+              <div id="longimg" class="longimg5"></div>
+              <h1>효원의 종</h1>
+              <div class="miniline"></div>
+              <p>
+                팔달산 정상에 있는 효원의 종은 유서 깊은 효원(孝園)의 도시이자
+                날로 발전하는 수원의 모습을 나타내는 상징으로 그 동안 주요 행사
+                때 마다 타종하였습니다.
+              </p>
+              <div class="btns">
+                <div class="btn1"><a href="#">VR체험 바로가기</a></div>
+                <div class="btn2"><a href="#">자세히보기</a></div>
+              </div>
+            </div>
+
+            <div class="gofirst">
+              <div class="gofirstbtn"><a href="#">처음으로 돌아가기</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- 14 -->
+        <div id="section14">
+          <p>History Of Suwon</p>
+          <p>History Of Suwon</p>
+          <p>History Of Suwon</p>
+          <p>History Of Suwon</p>
+          <p>History Of Suwon</p>
+          <p>History Of Suwon</p>
+          <p>History Of Suwon</p>
+          <p>History Of Suwon</p>
+        </div>
       </div>
       <!--뷰박스-->
     </div>
