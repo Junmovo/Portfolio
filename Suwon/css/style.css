@@ -16,7 +16,7 @@ overflow-x: hidden;
   height: 100vh;
 }
 #viewbox {
-  width: 2000%;
+  width: 910%;
   height: 100vh;
   display: flex;
   
@@ -377,20 +377,24 @@ overflow-x: hidden;
   font-size: 150px;
   font-weight: 200;
   margin-bottom: 60px;
+  transition: 1.5s;
 }
 #section9 .dumitext h2 {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 50px;
+  transition: 1.5s;
 }
 #section9 .dumitext p {
   width: 80%;
   line-height: 1.8;
   font-size: 18px;
   margin-bottom: 40px;
+  transition: 1.5s;
 }
 #section9 .another {
   text-align: right;
+  transition: 1.5s;
 }
 #section9 .another a {
   font-size: 20px;
@@ -431,6 +435,7 @@ overflow-x: hidden;
   background: url(../images/12.jpg) no-repeat 50% / cover;
   width: 615px;
   height: 90vh;
+  transition: 1.5s;
 }
 #section11 .Food_box .Food_IMG2 {
   background: url(../images/11.png) no-repeat 50% / cover;
@@ -439,6 +444,7 @@ overflow-x: hidden;
   position: absolute;
   top: 20px;
   right: -400px;
+  transition: 1.5s;
 }
 #section11 .dumitext {
   margin-left: 80px;
@@ -449,17 +455,19 @@ overflow-x: hidden;
   font-family: "ivypresto-display";
   font-size: 150px;
   font-weight: 200;
-  margin-bottom: 30px;
+  margin-bottom: 30px;transition: 1.5s;
 }
 #section11 .dumitext h2 {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 40px;
+  transition: 1.5s;
 }
 #section11 .dumitext p {
   line-height: 1.8;
   font-size: 18px;
   margin-bottom: 40px;
+  transition: 1.5s;
 }
 #section11 .dumitext .another {
   text-align: right;
@@ -503,6 +511,7 @@ overflow-x: hidden;
 #section13 .linebox .info {
   width: 400px;
   height: 100%;
+  transition: 1.5s;
 }
 #section13 .linebox #longimg {
   width: 400px;
@@ -628,7 +637,7 @@ overflow-x: hidden;
 
 /* 14 */
 #section14 {
-  margin-left: ;
+  width: 820px; height: 100%;
 }
 #section14 p {
   font-size: 100px;
