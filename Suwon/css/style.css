@@ -5,21 +5,27 @@ body {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-    scroll-behavior: smooth;
-overflow-y: hidden;
-overflow-x: hidden;
+  scroll-behavior: smooth;
+
+  overflow-x: hidden;
 }
 
 .section_container {
   width: 100%;
-  
+  position: relative;
+  /* height: 100vh; */
+}
+.sticky_box {
+  position: sticky;
+  top: 0;
   height: 100vh;
 }
 #viewbox {
   width: 910%;
   height: 100vh;
   display: flex;
-  
+  position: absolute;
+  transition: all 1s ease-out;
 }
 /*섹션1*/
 #section1 {
@@ -66,8 +72,10 @@ overflow-x: hidden;
   align-items: center;
   background-color: white;
   position: sticky;
-  left: 0;transition: 1.5s;
+  left: 0;
+  transition: 1.5s;
   z-index: 9999;
+  display: none;
   /* border-right: 1px solid black; */
 }
 #section2 h1 {
@@ -85,7 +93,6 @@ overflow-x: hidden;
   align-items: center;
   border-bottom: 1px solid black;
   transform: rotate(270deg);
-  
 }
 #section2 #gnb li:last-child {
   margin-left: 100px;
@@ -99,13 +106,13 @@ overflow-x: hidden;
   text-align: center;
 }
 
-#section2 #gnb li a span{
+#section2 #gnb li a span {
   position: relative;
 }
 #section2 #gnb a:hover span::after {
   width: 100%;
 }
-#section2 #gnb li a span::after{
+#section2 #gnb li a span::after {
   content: "";
   position: absolute;
   background-color: black;
@@ -114,7 +121,7 @@ overflow-x: hidden;
   bottom: -5px;
   height: 1px;
   transition: 0.4s;
-  width: 0
+  width: 0;
 }
 /*section3*/
 #section3 {
@@ -142,7 +149,6 @@ overflow-x: hidden;
   color: #999;
   line-height: 1.8;
   font-size: 1.2rem;
-  
 }
 
 /*section 4*/
@@ -302,15 +308,15 @@ overflow-x: hidden;
 .marquee {
   height: 400px;
   width: 400px;
-  
+
   position: absolute;
- top: -450px;
+  top: -450px;
   transform: rotate(270deg);
 }
 
 .marquee div {
   position: absolute;
- 
+
   -webkit-animation: marquee 10s linear infinite;
   animation: marquee 15s linear infinite;
 }
@@ -455,7 +461,8 @@ overflow-x: hidden;
   font-family: "ivypresto-display";
   font-size: 150px;
   font-weight: 200;
-  margin-bottom: 30px;transition: 1.5s;
+  margin-bottom: 30px;
+  transition: 1.5s;
 }
 #section11 .dumitext h2 {
   font-size: 50px;
@@ -609,7 +616,7 @@ overflow-x: hidden;
   font-size: 32px;
   position: relative;
 }
-.gofirst .gofirstbtn a::before {
+.gofirst .gofirstbtn > a::before {
   content: "";
   position: absolute;
   left: -40px;
@@ -637,7 +644,8 @@ overflow-x: hidden;
 
 /* 14 */
 #section14 {
-  width: 820px; height: 100%;
+  width: 820px;
+  height: 100%;
 }
 #section14 p {
   font-size: 100px;
@@ -646,15 +654,82 @@ overflow-x: hidden;
   font-family: "ivypresto-display";
 }
 /* 모션 */
-#welcome{
+#welcome {
   transform: translateX(409px);
   transition: 1.5s;
 }
-#visit{
+#visit {
   transform: translateX(500px);
+  transition: 2s;
+}
+#suwon {
+  transform: translateX(600px);
   transition: 2.5s;
 }
-#suwon{
-  transform: translateX(600px);
-  transition: 3.5s;
+.goport {
+  font-size: 1.5rem;
+  bottom: 0;
+  margin-top: auto;
+  float: right;
+  color: black;
+}
+.goport:hover {
+  animation: move_1 1s alternate infinite;
+}
+
+/* leftgnb */
+.leftbg {
+  background-color: #fff;
+  width: 120px;
+  height: 100vh;
+  position: fixed;
+  left: -120px;
+  z-index: 999999;
+  border-right: 1px solid black;
+  transition: 1s;
+  overflow: hidden;
+  /* display: none; */
+}
+#leftgnb {
+  position: absolute;
+  left: -790px;
+  display: flex;
+  justify-content: space-around;
+
+  background-color: #fff;
+  transform: rotate(270deg);
+  width: 874px;
+  transform-origin: right bottom;
+}
+#leftgnb li {
+}
+#leftgnb li a {
+  color: black;
+  display: block;
+  line-height: 40px;
+  height: 43px;
+  width: 150px;
+  text-align: center;
+}
+#leftgnb li h1 a {
+  width: 140px;
+  background: url(../images/logo.png) no-repeat 50% / cover;
+}
+
+.leftbg #leftgnb li a span {
+  position: relative;
+}
+.leftbg #leftgnb a:hover span:after {
+  width: 100%;
+}
+.leftbg #leftgnb li a span::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  margin: 0px auto;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  transition: 0.2s;
+  width: 0;
 }
