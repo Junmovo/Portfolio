@@ -258,10 +258,12 @@ main {
 .dumitxt02 .fonts .eng span {
   font-size: 24px;
   color: black;
+  display: block;
+  margin-top: 16px;
   font-family: "Palatino Linotype W02", serif;
 }
 .ivyweight span {
-  margin-top: 1.5vh;
+  margin-top: 30px;
   display: block;
   color: black;
 }

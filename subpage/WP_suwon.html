@@ -12,13 +12,16 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="https://use.typekit.net/kvl1rzs.css" />
+    <link rel="stylesheet" href="../common/css/aos.css">
     <link rel="stylesheet" href="./css/style_suwon.css" />
+    <script src="../common/js/aos.js"></script>
+    <script defer src="./js/suwon.js"></script>
   </head>
   <body>
     <div class="bgcimg">img</div>
     <div class="blackbox">black_box</div>
     <div class="mainbanner">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="textbox">
           <p class="title">WEB Publishing</p>
           <ul class="tagbox">
@@ -42,7 +45,7 @@
       </div>
     </div>
     <main>
-      <div class="list">
+      <div class="list" data-aos="fade-up" data-aos-duration="800">
         <div class="numbox">
           <p>01</p>
           <h2>Project</h2>
@@ -64,7 +67,7 @@
         </div>
       </div>
       <!-- 2 -->
-      <div class="list">
+      <div class="list" data-aos="fade-up" data-aos-duration="800">
         <div class="numbox">
           <p>02</p>
           <h2>Design</h2>
@@ -80,14 +83,14 @@
           </ul>
           <!-- keyword -->
           <h3 class="bluebold">Keyword</h3>
-          <div class="keyword">
+          <div class="keyword" data-aos="fade-up" data-aos-duration="800">
             <p>#세련된</p>
             <p>#화려한</p>
             <p>#동적인</p>
           </div>
           <!-- color -->
           <h3 class="bluebold">Color</h3>
-          <div class="cb">
+          <div class="cb" data-aos="fade-up" data-aos-duration="800">
             <div class="colorbox1">box</div>
             <p>
               Black<br />
@@ -114,7 +117,7 @@
           <!--cbbox-->
 
           <h3 class="bluebold">Fonts</h3>
-          <div class="fonts">
+          <div class="fonts" >
             <div class="noto">Pretendard</div>
             <div class="notoweight">
               <p>Bold</p>
@@ -130,26 +133,19 @@
           </div>
 
           <h3 class="bluebold">Design Problem & Solution</h3>
-          <ul class="PS">
+          <ul class="PS" data-aos="fade-up" data-aos-duration="800">
             <li class="PS_T">정보전달을 하려면 너무 화려하면 안되지 않을까?</li>
             <p>
               정보전달을 주 목적으로 가독성에 관련하여 화려하더라도 잘 보이는
               컨셉으로 움직임은 화려하지만 자간, 행간, 여백 등 정보 전달
               부분에서는 심플한 디자인으로 가독성을 높혀 제작
             </p>
-            <li class="PS_T">나는 잘 보이는데 다른사람은 잘 보이나?</li>
+            <li class="PS_T">화려하더라도 강약은 있어야지 </li>
             <p>
-              폰트의 색상, 라인의 색 등 사용자가 인지할 수 없을 정도로 연한
-              컬러를 사용하여 폰트의 명도와 채도를 올려 접근성에 위배되지 않은
-              색상으로 제작
+              화려하다고해서 컬러, 움직임에만 힘을 준 것이 아닌 이미지 선정 및
+              이미지의 색상을 고려하여 화려한 이미지엔 힘을 뺀 텍스트, 심심한 곳엔 강렬한 이미지 등 이미지와 폰트의 강약 조절
             </p>
-            <li class="PS_T">PC에서 보면 폰트 엄청 커요</li>
-            <p>
-              PC에서 최소 읽을 수 있는 폰트 16px 을 바탕으로 디자인 하였지만
-              직접 퍼블리싱을 하면서 디자인 하였던 폰트가 상당히 컸다는 것을
-              알게 되었다. 잘 읽힐 수 있는 폰트 크기로 조절 하였으며 PC 폰트에
-              대한 강약조절을 하였다.
-            </p>
+          
           </ul>
         </div>
         <!--dumitxt-->
@@ -169,20 +165,22 @@
         <div class="dumtxt">
           <ul id="publist">
             <li>Chrome 브라우저 최적화</li>
-            <li>PC : 1920-1024px / Mobile :390px</li>
-            <li><span>Grid</span>를 활용한 레이아웃 정렬</li>
+            <li><span>.offsetTop</span>을 이용한 <span>가로스크롤 홈페이지</span></li>
+            <li><span>가로형태의 탭 메뉴</span>구성</li>
+            <li><span>플러그인</span>을 활용한 여러 작업의 편의성</li>
             <li>
-              JavaScript를 이용한 모바일
-              <span>드롭다운메뉴(classList.();)</span>
+              마우스 오버:hover 시 이미지 변환
+              <span>(forEach.();)</span>를 통하여 반복문 활용
             </li>
             <li>
-              마우스 오버:hover 시 이미지 몰입감을 위해<span>
-                CSS transition:scale 효과 적용</span
-              >
+              jQuery를 이용한 <span>스크롤 위치에 따라 움직이는
+                애니메이션</span> 적용
             </li>
-            <li><span>카카오 API</span>를 통한 매장 위치정보제공</li>
-            <li>JavaScript를 이용한 <span>자동 슬라이드 배너</span> 제작</li>
-            <li><span>Media Query</span>를 이용한 min-max width 반응형 제작</li>
+            <li>
+              jQuery를 이용한 버튼 클릭 시 <span>특정 위치로 이동하는 scrollTo( x, y )</span> 이벤트
+            </li>
+            
+
           </ul>
         </div>
       </div>
@@ -196,48 +194,36 @@
           </h2>
         </div>
         <div class="dumtxt">
-          <ul id="PPS">
-            <li>
-              <span>Grid</span>를 썼는데 <span>row/colums</span>가 적용이 안돼요
+          <ul id="PPS" >
+            <li data-aos="fade-up" data-aos-duration="800">코드는 틀린게 없는데 왜 <span>Javascript가 실행이 안될까?</span></li>
+            <p data-aos="fade-up" data-aos-duration="800">
+              console을 확인 하였을 때 코드는 문제점이 없었음. 하지만 실행이 되지 않았다. Javascript 작성 시 헤더 안에 작성 할 경우 script src="" 중 src 앞에 defer를 작성을 해야 Dom이 불러오기 전에 스크립트를 가져와 실행 시켜주어 defer 작성 후 해결
+            </p>
+            <li data-aos="fade-up" data-aos-duration="800">
+              세로는 많이 해봤는데.. <span>가로스크롤</span>은 어떻게 만들지?
             </li>
-            <p>
-              Grid 를 적용하였지만 이미지들이 정렬이 안되는 현상 발생. Grid >
-              black_box > img 순 으로 Grid는 하위 선택자 1명 한테만 적용이 되어
-              이미지들이 모두 틀어짐. class에 직접 row/colums값을 적용하여
-              이미지를 재배열하여 해결
+            <p data-aos="fade-up" data-aos-duration="800">
+              세로형태의 홈페이지는 해보았지만 가로형태의 스크롤은 처음 해보아 실행의 어려움을 겪음. Position: sticky와 offsetTop을 이용한 전체 콘텐츠의 transform = translateX( ) 를 통한 부드러운 가로스크롤 완성
             </p>
-
-            <li>하란대로 했는데 <span>API 지도</span> 가 왜 안나오지?</li>
-            <p>
-              Javascript API 를 불러올 때, 지도가 출력되지 않는 현상이 나타남
-              script src=""에 Http, Https를 작성하지 않아 출력되지 않는 현상
-              해결 Https: 를 붙이지 않을 시 많은 시간이 소요되며 로컬에선
-              불러와지지 않는다는 점을 알게됨.
-            </p>
-            <li>
-              <span>웹폰트 적용</span>은 된거 같은데 왜 <span>출력</span>이
-              안될까?
+            <li data-aos="fade-up" data-aos-duration="800">
+              세로형태의 <span>transform : rotate(270deg)</span>의 늪
             </li>
-            <p>
-              폰트 Ivypresto-Display 적용 시 F12 개발자모드를 통하여 적용 확인은
-              하였지만 Window 기본 폰트만 적용 됨. link 를 통하여 확인 해 본
-              결과 기존 Font 의 이름과 웹폰트의 이름이 일치하지 않아 일치시켜
-              해결.
+            <p data-aos="fade-up" data-aos-duration="800">
+              뒤집어진 탭메뉴와 애니메이션을 디자인 하였지만 실질적 코드 구현에 매우 어려움을 겪음 rotate(270deg) 적용 시 width 값과 height 값이 달라져버림
+              Position의 left . top 값을 이용하여 맞추고 z-index를 통한 우선순위 부여하여 해결
             </p>
-            <li>자동 슬라이드 배너 완성</li>
-            <p>
-              플러그인을 통한 배너가 아닌 순수 자바스크립트를 이용하여 배너
-              완성. classList와 setInterval을 통한 시간에 따른 변화를 주었고
-              opacity를 통한 자연스러운 움직임을 부여하였다.
+            <li data-aos="fade-up" data-aos-duration="800">여기 위치에선 <span>애니메이션</span>이 이렇게 움직이고...</li>
+            <p data-aos="fade-up" data-aos-duration="800">
+              마우스 스크롤에 따른 애니메이션을 부여 시 첫 사용하는 jQuery를 통하여 제작 if와 else문을 활용하여 마우스 휠 위치에 따른 애니메이션 부여
             </p>
           </ul>
         </div>
       </div>
       <div class="view">
-        <a href="../RomanticCrown/romantic.html">View Site</a>
+        <a href="../Suwon/suwon.html">View Site</a>
       </div>
       <div class="lastbtn">
-        <div class="backbtn"><a href="#">BACK</a></div>
+        <div class="backbtn"><a href="./WP_romantic.html">BACK</a></div>
         <div class="nextbtn"><a href="#">NEXT</a></div>
       </div>
     </main>

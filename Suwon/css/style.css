@@ -615,6 +615,7 @@ body {
   height: 100%;
   font-size: 32px;
   position: relative;
+  width: 20vw;
 }
 .gofirst .gofirstbtn > a::before {
   content: "";
