@@ -15,7 +15,7 @@ letter-spacing: -0.5px;
   align-items:center;
 }
 .GNBcontainer h1{ margin-left:5vw;}
-.GNBcontainer > a{ background:url(../images/bell.svg) no-repeat 50% / cover; display: block; width: 40px; height: 40px; text-indent: -9999px; margin-right: 5vw;}
+.GNBcontainer > a{ background:url(../images/bell.svg) no-repeat 50% / cover; display: block; width: 30px; height: 30px; text-indent: -9999px; margin-right: 5vw;}
 /* 슬라이드 */
 .swiper {
   width: 100%;
@@ -141,16 +141,139 @@ grid-template: repeat(2,1fr)/repeat(2,1fr); gap: 10px;}
 .review .subtitle{}
 .review .reviewbox{ padding-bottom: 30px; margin: 0px 6vw; border-radius: 16px;background-color: #fff; }
 .review .reviewbox .review_img{background: url(../images/photo.jpg)no-repeat 50% /cover; height: 300px;border-radius: 16px 16px 0 0 ;}
-.reviewbox header{display: flex; justify-content: space-around; align-items: center; margin: 20px 0;}
+.reviewbox header{display: flex; justify-content: center; align-items: center; margin: 20px 0;}
 .icon{
   background: url(../images/favorite.svg)no-repeat 50% /cover; width: 30px; height: 30px;
   text-indent: -9999px;
   
 }
-.reviewbox header h4{text-align: left; font-size: 18px;}
+.reviewbox header h4{text-align: left; font-size: 18px;margin-bottom: 8px;}
 .reviewbox header h5{color: #797979;}
 .reviewbox header .insta{color: #797979;}
 .reviewbox p{
   padding: 0px 19px; text-align: left; line-height: 1.4;
+}
+.mid{
+  margin: 0px 20px;
+}
+.review > p{
   
+}
+.review > p a{
+  margin-top: 40px;color: white; display: block;
+  
+  margin: 40px auto;
+  position: relative;
+}
+
+.review > p a::after{
+  content: "";
+  background: url(../images/arrow_forward_ios_FILL0_wght400_GRAD0_opsz48.svg) no-repeat 50% /cover;
+  width: 30px; height: 30px; position: absolute; top: -5px;
+}
+
+/* 퍼펙트딜 */
+.deal
+{
+  margin: 60px 5vw; text-align: center;
+}
+.deal .dealbox{
+  width: 100%;  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2); 
+box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
+}
+.deal .deal_img1{
+  background: url(../images/deal1.jpg) no-repeat 50% /cover;
+  width: 100%; 
+  height: 220px;
+  border-radius: 16px 16px 0 0;
+}
+.deal .deal_img2{
+  background: url(../images/deal2.jpg) no-repeat 50% /cover;
+  width: 100%; 
+  height: 220px;
+  border-radius: 16px 16px 0 0;
+}
+.deal .deal_img3{
+  background: url(../images/deal3.jpg) no-repeat 50% /cover;
+  width: 100%; 
+  height: 220px;
+  border-radius: 16px 16px 0 0;
+}
+.deal .deal_img4{
+  background: url(../images/deal4.jpg) no-repeat 50% /cover;
+  width: 100%; 
+  height: 220px;
+  border-radius: 16px 16px 0 0;
+}
+.textbox {text-align: left; padding: 0px 20px;}
+.textbox h4{margin-top: 16px;}
+.textbox h2{font-weight: bold; font-size: 20px; margin: 5px 0;}
+.textbox .price{
+  text-align: right;
+  text-decoration: line-through;
+  color: #7B7D8D;
+  margin-top: 5px;
+}
+.textbox .price_main{
+  display: flex;
+  justify-content: space-between;
+}
+.textbox .price_main .num{color: #7B7D8D; line-height: 33px;}
+.textbox .price_main .price_deal{font-size: 22px; font-weight: bold; margin-bottom: 14px;}
+.textbox .price_main .price_deal span{font-size: 20px; font-weight: bold; color: #FF7AB1;}
+
+.deal > .view{
+  margin-top: 40px;
+}
+/* 광고박스 */
+.AD{margin: 60px 5vw;  color: white; font-family: 'SBAggroB';position: relative;}
+.AD .ADbox{
+  margin-top: 10vh;
+  background-color: black;
+  border-radius: 16px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20vh;
+  
+}
+.AD .ADbox h4{font-family: 'OTEnjoystoriesBA',sans-serif; font-size: 24px;}
+.AD .ADbox h4::after{content: "";width: 80px;height: 1px; display: inline-block; background-color: #fff;margin-left:1vw;margin-bottom: 1vh;}
+.AD .ADbox .middle{display: flex;}
+.AD .ADbox h1{font-size: 32px; color: #FF7AB1; font-weight: bold; margin-right: 2vw;}
+.AD .ADbox h2{font-size: 16px;}
+.AD .ADbox h3{margin-top: 5px; font-weight: 400;}
+.AD .ADbox .cellphone{background: url(../images/13.png)no-repeat 50% /cover;position: absolute; width: 200px; height: 17vh; right: 0; top: 28px;}
+
+.end{
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(2,1fr);
+  justify-items: center;
+  margin: 0 5vw;
+}
+.end div{
+  padding: 10px;
+  width: 100%;
+  display: block;
+  border: 1px solid #7B7D8D;
+  text-align: center;
+  border-left: none;
+  border-right: none;
+}
+.end .service, .end .trade{
+  border-right: 1px solid #7B7D8D;
+}
+.end .service, .end .map{
+  border-bottom: none;
+}
+.end div a{
+  color: #7B7D8D;
+}
+.end_text{
+  margin: 20px 5vw;
+  font-size: 14px;
+  color: #7B7D8D;
 }
