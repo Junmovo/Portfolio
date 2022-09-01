@@ -138,13 +138,13 @@ main {
 }
 .bluebold_first {
   font-weight: 700;
-  color: #1c3e84;
+  color: #ff6491;
   margin-top: 60px;
 }
 .bluebold {
   font-weight: 700;
   margin-top: 80px;
-  color: #1c3e84;
+  color: #ff6491;
 }
 .dumtxt {
   width: 46%;
@@ -200,7 +200,7 @@ main {
   display: flex;
   width: 180px;
   height: 100px;
-  background-color: #999;
+  background-color: #7B7D8D;
   margin-right: 15px;
   text-indent: -9999px;
 }
@@ -208,7 +208,8 @@ main {
   display: flex;
   width: 180px;
   height: 100px;
-  background-color: #092e92;
+  background-color: #ffffff;
+  border: 1px solid black;
   margin-right: 15px;
   text-indent: -9999px;
 }
@@ -216,7 +217,7 @@ main {
   display: flex;
   width: 180px;
   height: 100px;
-  background-color: #820808;
+  background-color: #ff7ab1;
   margin-right: 15px;
   text-indent: -9999px;
 }
@@ -229,7 +230,7 @@ main {
 /*fonts*/
 .dumitxt02 .fonts {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   font-size: 20px;
 }
 .dumitxt02 .fonts .noto {
@@ -298,7 +299,7 @@ main {
 }
 span {
   font-weight: 700;
-  color: #1c3e84;
+  color: #ff6491;
 }
 /*publishing problem*/
 .dumtxt #PPS li {
