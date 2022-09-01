@@ -5,8 +5,25 @@ body {
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
   letter-spacing: -1px;
+  scroll-behavior: smooth;
 }
 
+.Gnbcontainer{position: fixed; top: 0;width: 100%; z-index: 99999;}
+.Gnbcontainer.on{background-color: white; transition: 0.5s; -webkit-box-shadow: 0px 8px 10px 2px rgba(0,0,0,0.11); 
+  box-shadow: 0px 8px 10px 2px rgba(0,0,0,0.11);}
+.Gnbcontainer .gnb{width: 1400px; height: 80px; margin: 0px auto; }
+.Gnbcontainer ul{display: flex;
+
+align-items: center;
+color: white;
+width: 1400px;
+height: 80px;
+}
+.Gnbcontainer ul li{}
+.Gnbcontainer ul li a{display: block; color: white; margin-right: 4vw; text-align: center; }
+.Gnbcontainer ul li a:hover{
+  transform: translateY(-3px);
+}
 /*배너*/
 .mainbanner {
   width: 100%;
@@ -352,4 +369,17 @@ span {
 .lastbtn .backbtn,
 .lastbtn .nextbtn {
   margin: 100px 10vw;
+}
+#PPS_3 p{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#PPS_3 li{
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 50px;
+}
+#PPS_3 li > p{
+  font-size: 20px;
+  
 }
