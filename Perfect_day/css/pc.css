@@ -30,6 +30,28 @@
   margin-bottom: 20px;
   -webkit-box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2); 
 box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
+cursor: pointer;
+}
+.dealbox2:hover > .hidebox .round{
+transform: scale(1.05);
+}
+.round{
+  transition: 0.5s;
+}
+.hidebox{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+.hidebox1{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+.dealbox:hover > .hidebox1 .round{
+transform: scale(1.05);
 }
 .dealcontainer2{
   display: flex;
@@ -38,18 +60,78 @@ box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
 }
 .deal_img5{
 background: url(../images/deal5.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
 }
 .deal_img6{
 background: url(../images/deal6.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
 }
-.deal_img6{
+.deal_img7{
 background: url(../images/deal7.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
 }
-.deal_img6{
+.deal_img8{
 background: url(../images/deal8.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
 }
 .round{
   width: 100%; 
   height: 220px;
   border-radius: 16px 16px 0 0;
+}
+.AD .ADbox{
+  padding: 5vh 5vw;
+  width: 100%;
+  height: 500px;
+  -webkit-box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2); 
+  box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
+}
+.AD{
+  margin: 60px 0;
+  cursor: pointer;
+
+}
+.AD2{
+    margin: 60px 0vw;
+    color: white;
+    cursor: pointer;
+   display: block;
+    position: relative;
+}
+.AD2 .ADbox2 {
+  margin-top: 10vh;
+  background-color: #FF7AB1;
+  border-radius: 16px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20vh;
+  padding: 6vh 5vw; -webkit-box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2); 
+  box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
+}
+.AD2 h1{
+  font-size: 40px;
+  font-family: 'SBAggroB';
+}
+.AD2 h2{
+  font-size: 25px;
+}
+.AD2 .icon2{
+  background: url(../images/icon.png) no-repeat 50% / contain;
+  width: 330px;
+  height: 100%;
+  position: absolute;
+  right: 22%;
+  top: 20px;
+}
+
+.ADcontainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+.AD .ADbox .cellphone{
+  top: 320px;
+  
+  
 }

@@ -436,3 +436,32 @@ box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
   height: 100%;
   object-fit: cover;
 }
+.dealbox2{
+  display: none;
+}
+.AD2{
+  display: none;
+}
+.gopofo{
+  font-size: 24px; font-weight: bold;
+  color: #7B7D8D;
+   text-align: center;
+   padding: 50px 0;
+   position: relative;
+   transition: 1s;
+}
+
+span{
+  color: #ff7ab1;
+}
+.gopofo:hover{
+  animation: ani_1 1s infinite alternate;
+}
+@keyframes ani_1 {
+  0%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}

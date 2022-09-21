@@ -187,3 +187,12 @@ border-radius: 0;
   height: 27vh;
   right: 4vw;
 }
+.ADcontainer{
+  display: block;
+}
+.dealbox2{
+  display: none;
+}
+.AD2{
+  display: none;
+}

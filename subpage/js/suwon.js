@@ -19,11 +19,12 @@ $(".btn")
   .eq(0)
   .on("click", e => {
     e.preventDefault();
-    window.scrollTo({
-      top: 900,
-      left: 0,
-      behavior: "smooth",
-    });
+    $('html, body').animate( { scrollTop : $('#first').offset().top - 200}, 500 );
+    // window.scrollTo({
+    //   top: $('#first').offset().top - 200,
+    //   left: 0,
+    //   behavior: "smooth",
+    // });
   });
 $(".btn")
   .eq(1)
@@ -79,3 +80,5 @@ $("body").on("mousewheel", function (e) {
     $(".Gnbcontainer .gnb ul").css({height: "40px"});
   }
 });
+
+console.log($('#first').offset().top)
