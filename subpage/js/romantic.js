@@ -19,41 +19,41 @@ $(".btn")
   .eq(0)
   .on("click", e => {
     e.preventDefault();
-    window.scrollTo({
-      top: 900,
-      left: 0,
-      behavior: "smooth",
-    });
+    $('html, body').animate( { scrollTop : $('#first').offset().top - 200}, 500 );
+    // window.scrollTo({
+    //   top: $('#first').offset().top - 200,
+    //   left: 0,
+    //   behavior: "smooth",
+    // });
   });
 $(".btn")
   .eq(1)
   .on("click", e => {
     e.preventDefault();
-    window.scrollTo({
-      top: 1400,
-      left: 0,
-      behavior: "smooth",
-    });
+    $('html, body').animate( { scrollTop : $('#second').offset().top - 200}, 500 );
+    // window.scrollTo({
+    //   top: 1400,
+    //   left: 0,
+    //   behavior: "smooth",
+    // });
   });
 $(".btn")
   .eq(2)
   .on("click", e => {
     e.preventDefault();
-    window.scrollTo({
-      top: 3100,
-      left: 0,
-      behavior: "smooth",
-    });
+    $('html, body').animate( { scrollTop : $('#third').offset().top - 200}, 500 );
   });
 $(".btn")
   .eq(3)
   .on("click", e => {
     e.preventDefault();
-    window.scrollTo({
-      top: 3900,
-      left: 0,
-      behavior: "smooth",
-    });
+    $('html, body').animate( { scrollTop : $('#four').offset().top - 200}, 500 );
+  });
+$(".btn")
+  .eq(4)
+  .on("click", e => {
+    e.preventDefault();
+    $('html, body').animate( { scrollTop : $('#five').offset().top - 200}, 500 );
   });
 
 $("body").on("mousewheel", function (e) {
