@@ -685,6 +685,7 @@ body {
   height: 100vh;
   position: fixed;
   left: -120px;
+  top: 0;
   z-index: 999999;
   border-right: 1px solid black;
   transition: 1s;
