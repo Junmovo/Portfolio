@@ -145,6 +145,7 @@ border-radius: 0;
 .more a{
   color: #7B7D8D;
 }
+
 /* 퍼펙트딜 */
 .deal_container{
   display: flex;
@@ -164,6 +165,17 @@ border-radius: 0;
 }
 .deal > .view{
   margin-top: 60px;
+}
+.dealcontainer2{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: center;
+  flex-direction: row;
+}
+.dealbox2{
+  width: 48%;
+  margin-bottom: 0;
 }
 /* 광고 */
 .ADbox{

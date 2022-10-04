@@ -1,0 +1,116 @@
+@charset "utf-8";
+body{
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;;
+}
+h1{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 28px;
+  font-weight: bold;
+}
+.goport h2{
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 24px;
+  font-weight: bold;
+}
+.goport a{
+  color: black;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.box{
+ /* margin: 200px auto; */
+ margin-left: 20px;
+ width: 400px;
+ height: 300px;
+ border-radius: 20px;
+ overflow: hidden;
+ box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+ display: block;
+ transition: 0.5s;
+}
+.box:hover{
+  transform: scale(1.05);
+}
+.time{
+  position: absolute;color:#fff;
+  right: 20px;
+  bottom: 10px;
+  background-color: black;
+  padding: 0 5px ;
+  
+  border-radius: 5px;
+}
+.img{
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+.img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.bottom{
+  display: flex;
+  /* align-items: center; */
+  padding: 12px;
+  width: 100%;
+}
+.info{
+  margin-left: 20px;
+  width: 100%;
+}
+.info h2{
+  margin-bottom: 10px;
+  height: 45px;
+  color: #1c3e84;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.info p{
+  font-size: 16px;
+  color: #999;
+  text-align: center;
+}
+
+.bottom .info{
+  
+}
+
+#mouse-pointer{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background-color: rgb(53, 25, 214);
+  z-index: 9999;
+  mix-blend-mode: difference;
+  pointer-events: none;
+  transition: transform 0.3s;
+}
+#mouse-pointer.hover{
+  transform: scale(3);
+}
+span{
+  color:#1c3e84;
+}

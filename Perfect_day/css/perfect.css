@@ -327,6 +327,63 @@ box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
   height: 220px;
   border-radius: 16px 16px 0 0;
 }
+.dealbox2{
+  width: 100%;  background-color: #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2); 
+box-shadow: 0px 10px 15px -4px rgba(0,0,0,0.2);
+cursor: pointer;
+}
+/* .dealbox2:hover > .hidebox .round{
+transform: scale(1.05);
+} */
+.round{
+  transition: 0.5s;
+}
+.hidebox{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+.hidebox1{
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 16px 16px 0 0;
+}
+/* .dealbox:hover > .hidebox1 .round{
+transform: scale(1.05);
+} */
+.dealcontainer2{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  margin-top:2vh;
+}
+.deal_img5{
+background: url(../images/deal5.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
+}
+.deal_img6{
+background: url(../images/deal6.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
+}
+.deal_img7{
+background: url(../images/deal7.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
+}
+.deal_img8{
+background: url(../images/deal8.jpg)no-repeat 50%/ cover;
+transition: 0.5s;
+}
+.round{
+  width: 100%; 
+  height: 220px;
+  border-radius: 16px 16px 0 0;
+}
+
 .textbox {text-align: left; padding: 0px 20px;}
 .textbox h4{margin-top: 16px;}
 .textbox h2{font-weight: bold; font-size: 20px; margin: 5px 0;}

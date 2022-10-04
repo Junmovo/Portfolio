@@ -57,6 +57,6 @@ $('.selectbox ul li a').eq(3).on('click',function(e){
 
 $('#open').on('click',function(e){
   e.preventDefault();
-  $('.dealbox2').show()
+  $('.dealbox2').show().fadeIn(1500)
   $('#open').hide()
 })

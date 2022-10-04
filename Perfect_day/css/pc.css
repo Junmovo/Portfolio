@@ -57,6 +57,7 @@ transform: scale(1.05);
   display: flex;
   gap: 2vw;
   margin-top:4vh;
+  flex-wrap: nowrap;
 }
 .deal_img5{
 background: url(../images/deal5.jpg)no-repeat 50%/ cover;
